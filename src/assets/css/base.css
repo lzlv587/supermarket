@@ -1,0 +1,14 @@
+@import './normalize.css';
+
+
+/* root->获取根元素:html */
+
+/* 定义变量 */
+:root {
+    --color-text:#666;
+    --color-hight-text:#ff5777;
+    --color-tint:#ff8198;
+    --color-background:#FFF;
+    --font-size:14px;
+    --line-height:1.5
+}
