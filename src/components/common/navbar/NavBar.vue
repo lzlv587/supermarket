@@ -1,5 +1,5 @@
 <template>
-    <div class="nav-bar">
+    <div class="nav-bar" id="nav-bar">
         <div class="left">
             <slot name="left"></slot>
         </div>
@@ -21,13 +21,14 @@ export default {
         display: flex;
         line-height: 44px;
         height: 44px;
+        color: white;
     }
     .left, .right{
         width: 50px;
-        background-color: blue;
+        background-color: rgb(253, 139, 219);
     }
     .center{
         flex:1;
-        background-color: brown;
+        background-color: rgb(253, 139, 219);
     }
 </style>

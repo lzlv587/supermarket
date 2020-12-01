@@ -1,6 +1,8 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
     <TabBar>
       <TabBarItem path="/home">
         <img src="~assets/img/tabbar/home.png" slot="item-icon" >
@@ -27,8 +29,8 @@
 </template>
 
 <script>
-import TabBar from 'components/common/tabbar/TabBar'
-import TabBarItem from 'components/common/tabbar/TabBarItem'
+import {TabBar,TabBarItem} from 'components/common/tabbar'
+
 export default {
   name: 'tabbar',
   components:{
@@ -46,7 +48,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 </style>

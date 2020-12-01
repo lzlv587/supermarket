@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import home from 'views/home/home'
 import like from 'views/like/like'
 import user from 'views/user/user'
@@ -30,6 +29,10 @@ export default new Router({
       name:"USER",
       component:user
     },
-    
+    {
+      path: '/home',
+      name: 'HOME',
+      component: home
+    }
   ]
 })

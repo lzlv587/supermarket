@@ -1,9 +1,9 @@
 <template>
-  <div id="app">
+
     <div id="tab_bar">
         <slot></slot>
     </div>
-  </div>
+
 </template>
 
 <script>
