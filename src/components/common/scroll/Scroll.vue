@@ -40,8 +40,24 @@ export default {
             click:true
         })
         this.scroll.on('scroll',(position)=>{
-            console.log(position);
+            // console.log(position);
         })
+        this.scroll.on('pullingUp',()=>{
+            console.log('到底了')
+            this.$emit('ShowMore',this.scroll)
+        })
+        this.$emit('TransScroll',this.scroll)
+    },
+    methods:{
+        refresh(){
+            console.log(this.scroll)
+            console.log('开始处理刷新scroll')
+            this.scroll.refresh();
+        },
+        finishPullUp(){
+            console.log('完成了加载更多')
+            this.scroll.finishPullUp();
+        }
     }
 }
 </script>

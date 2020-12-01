@@ -13,7 +13,19 @@ export default {
                 return []
             }
         }
-    }
+    },
+    methods:{
+        goodload(){
+            alert("div渲染完成")
+        }
+    },
+    updated(){
+        this.$nextTick(function(){
+            console.log("测试发送事件总线")
+            this.$bus.$emit('GoodLoad')
+        })
+    },
+    
 }
 </script>
 <style scoped>

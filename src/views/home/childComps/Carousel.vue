@@ -21,6 +21,12 @@ export default {
                 return []
             }
         }
-    }
+    },
+    updated(){
+        this.$nextTick(function(){
+            console.log("测试发送事件总线")
+            this.$bus.$emit('GoodLoad')
+        })
+    },
 }
 </script>
